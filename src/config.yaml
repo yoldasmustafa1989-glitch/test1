@@ -1,5 +1,5 @@
 site:
-  name: AstroWind
+  name: Puzzle Social House
   site: 'https://astrowind.vercel.app'
   base: '/'
   trailingSlash: false
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Puzzle Social House
+    template: '%s — Puzzle Social House'
+  description: Pub and social house in Kaleiçi, Antalya — drinks and good company in the old town.
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Puzzle Social House
     images:
       - url: '~/assets/images/default.png'
         width: 1200
