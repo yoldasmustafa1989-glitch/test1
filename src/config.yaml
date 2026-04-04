@@ -1,62 +1,63 @@
 site:
-  name: Puzzle Social House
-  site: 'https://astrowind.vercel.app'
+  name: Vakman de Groot
+  site: 'https://www.vakmandegroot.nl' # Update this once you have your real domain
   base: '/'
   trailingSlash: false
 
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  # Remove or update this if you have your own Google Search Console ID
+  googleSiteVerificationId: null 
 
 # Default SEO metadata
 metadata:
   title:
-    default: Puzzle Social House
-    template: '%s — Puzzle Social House'
-  description: Pub and social house in Kaleiçi, Antalya — drinks and good company in the old town.
+    default: Vakman de Groot · Loodgieter & Installateur Haarlem
+    template: '%s — Vakman de Groot'
+  description: Uw betrouwbare vakman in Haarlem en Heemstede voor lekkages, CV-ketel onderhoud en complete badkamer renovaties.
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: Puzzle Social House
+    site_name: Vakman de Groot
     images:
       - url: '~/assets/images/default.png'
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@arthelokyo'
-    site: '@arthelokyo'
+    handle: null
+    site: null
     cardType: summary_large_image
 
 i18n:
-  language: en
+  language: nl # Changed to Dutch
   textDirection: ltr
 
 apps:
   blog:
-    isEnabled: true
+    isEnabled: true # Keep enabled if you want to show 'Projecten' as blog posts
     postsPerPage: 6
 
     post:
       isEnabled: true
-      permalink: '/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
+      permalink: '/projecten/%slug%' # Changed from /blog/ to /projecten/ for better SEO
       robots:
         index: true
 
     list:
       isEnabled: true
-      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
+      pathname: 'projecten' # This makes your 'Blog' list look like a 'Projecten' list
       robots:
         index: true
 
     category:
       isEnabled: true
-      pathname: 'category' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
+      pathname: 'categorie' 
       robots:
         index: true
 
     tag:
       isEnabled: true
-      pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
+      pathname: 'onderwerp'
       robots:
         index: false
 
@@ -66,7 +67,4 @@ apps:
 analytics:
   vendors:
     googleAnalytics:
-      id: null # or "G-XXXXXXXXXX"
-
-ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+      id: null # Add your "G-XXXXXXXXXX" here later to see visitor stats
